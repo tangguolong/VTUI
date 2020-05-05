@@ -1,0 +1,68 @@
+@import "./common/var.css";
+@b w{
+  @e timeLine {
+    padding: 50px 0;
+    position: relative;
+    overflow: hidden;
+    @m item{
+      display: block;
+      position: relative;
+      text-align: justify;
+      text-justify: newspaper;
+      word-break: break-all;
+      padding-left: 50px;
+      color: #fff;
+      padding-right: 10px;
+    }
+    @m item::after{
+      content:"";
+      display:block;
+      clear:both;
+    }
+    @m line{
+      position: absolute;
+      left: 29px;
+      width: 4px;
+      height: 100%;
+      background-color: #eee;
+    }
+    @m dot{
+      background:#000;
+      z-index: 100;
+      display: inline-block;
+      position: absolute;
+      left: 25px;
+      top: 0;
+      padding: 3px;
+      border: 3px solid #eee;
+      border-radius: 20px;
+      background-color: #fff;
+      box-shadow: 3px 3px 8px #ccc;
+      transition: .5s;
+    }
+    @m active{
+      border: 3px solid rgba(132, 43, 171, .8);
+    }
+    @m cbox{
+      padding:5px 0px;
+    }
+    @m box{
+      position: relative;
+      padding: 10px;
+      border-radius: 10px;
+      background-image: linear-gradient(45deg, rgba(0, 200, 255, 0.4) 0%, rgba(132, 43, 171, 0.4) 100%);
+      box-shadow: 3px 3px 8px #ccc;
+    }
+  }
+}
+@keyframes toLeft {
+  /* from{
+    left: 100vw;
+  } */
+  0%{
+    left: 100vw;
+  }
+  100%{
+    left:0px;
+  }
+}
